@@ -1,0 +1,19 @@
+version: "3"
+services:
+  frontend:
+    image: ghcr.io/freegtd/freegtd-frontend:latest
+    restart: always
+
+  backend:
+    image: ghcr.io/freegtd/freegtd-backend:latest
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8099:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - frontend
+      - backend
