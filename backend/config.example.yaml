@@ -1,0 +1,8 @@
+database_file_path: "db.sqlite3"
+bind_host: "localhost"
+bind_port: 4000
+auth0_domain: ""
+auth0_client_id: ""
+auth0_client_secret: ""
+auth0_callback_url: "http://localhost:4000/api/v1/auth/callback"
+cookie_secret: ""
