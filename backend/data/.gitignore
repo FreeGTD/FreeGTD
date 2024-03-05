@@ -1,0 +1,5 @@
+# Config file
+config.yaml
+
+# Database file
+db.sqlite3
