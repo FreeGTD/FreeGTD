@@ -4,7 +4,7 @@ services:
     image: ghcr.io/freegtd/freegtd-frontend:latest
     restart: always
     ports:
-      - "3000:80"
+      - "9000:80"
     volumes:
       - ./frontend/etc/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
